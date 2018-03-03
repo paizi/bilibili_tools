@@ -33,6 +33,7 @@ $url='http://api.bilibili.com/archive_stat/stat?aid='.$av;
 $json = file_get_contents($url );  
 //echo $json;
 $ret=json_decode($json);  
+if($ret->code==0){
 //var_dump($ret);
 echo('AV号='.$ret->data->aid);
 echo('<br>播放量='.$ret->data->view);
@@ -46,6 +47,9 @@ echo('<br>目前排名='.$ret->data->now_rank);
 echo('<br>历史最高排名='.$ret->data->his_rank);
 echo('<br>推荐='.$ret->data->like);
 echo('<br>状态码='.$ret->code);
+}
+else
+echo('请检查AV号是否有误');
 }
 ?></div>
   </div>
