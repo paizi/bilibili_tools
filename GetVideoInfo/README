@@ -1,0 +1,2 @@
+此工具使用了Bootstrap v4框架和jquery，已经通过官方cdn调用，注重速度的话可以设置成国内cdn。
+此工具还加入了我自制的去除右边白边的css，请将fixbootstrap.css放入目录/css文件夹中，或自行修改。
