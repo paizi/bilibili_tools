@@ -14,16 +14,21 @@
   </head>
   
   <body>
+  <div class="container">
   <h2><p class="text-center">bilibili视频信息查询</p></h2>
-  
+ </div>
+ 
+  <div class="container"> 
 <form action="" method="post">
   <div class="form-group">
   <input type="text" name="av" class="form-control" id="exampleInputPassword1" placeholder="请输入视频的AV号">
   </div>
   <button type="submit" name="submit" class="btn btn-primary">提交</button>
 </form>
+</div>
 <br>
 
+<div class="container">
   <div class="card bg-light text-dark">
  <div class="card-body"><?php
 if(isset($_POST['submit'])){
@@ -52,13 +57,16 @@ else
 echo('请检查AV号是否有误');
 }
 ?></div>
+   </div>
   </div>
 <br>
 <br>
 
+<div class="container">
 <p>©2018  <a href="https://blingwang.cn">派兹</a> 版权所有</p>
 <p>感谢<a href="https://wxserver.cn">Maggienorth</a>对本工具做出的大力支持</p>
 <p>Web frame by<a href="https://v4.bootcss.com"> Bootstrap</a>，遵守<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT</a>协议。</p>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
