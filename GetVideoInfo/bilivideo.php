@@ -24,12 +24,13 @@
 </form>
 <br>
 
-  <div class="card bg-light text-dark">
- <div class="card-body"><?php
+ <div class="card bg-light text-dark">
+ <div class="card-body">
+ <?php
 if(isset($_POST['submit'])){
 $av=$_POST['av'];
 //echo $av;
-$url='http://api.bilibili.com/view?type=json&appkey=在此填入你的App Key&id='.$av;  
+$url='http://api.bilibili.com/view?type=json&appkey=在此输入你的App Key&id='.$av;  
 $json = file_get_contents($url );  
 //echo $json;
 $ret=json_decode($json);  
@@ -39,7 +40,8 @@ echo('<br>描述='.$ret->description);
 //请加入显示封面图片的功能 pic
 echo('<br>UP主='.$ret->author);
 }
-?></div>
+?>
+  </div>
   </div>
 <br>
 <br>
