@@ -1,5 +1,5 @@
 此工具使用了Bootstrap v4框架和jquery，已经通过官方cdn调用，注重速度的话可以设置成国内cdn。
-此工具还加入了我自制的去除右边白边的css，请将fixbootstrap.css放入目录/css文件夹中，或自行修改。
+fixbootstrap.css已删除，请删除源码中关于这个css的所有内容，并使用container。
 bilisearch包括了获取视频播放，弹幕，评论，硬币，收藏等功能。
 bilivideo包括了获取视频标题，UP主，链接等功能。
 bilivideo.php需要填入App Key。
